@@ -1,0 +1,699 @@
+<!doctype html>
+
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/256/1187/1187544.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script id="tailwind-config" src="tailwind.config.js"></script>
+  </head>
+  <body
+    class="font-body-md text-body-md min-h-screen flex flex-col bg-surface text-on-surface"
+  >
+    <!-- Header -->
+    <header
+      class="bg-surface/95 backdrop-blur border-b border-outline-variant sticky top-0 z-50"
+    >
+      <div
+        class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto h-16"
+      >
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-primary">menu_book</span>
+          <span
+            class="font-headline-md text-headline-md font-bold text-primary"
+          >
+            Johan's Blog
+          </span>
+        </div>
+
+        <nav class="hidden md:flex gap-6 items-center">
+          <a
+            class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md"
+            href="#inicio"
+          >
+            Blog
+          </a>
+
+          <a
+            class="text-on-surface-variant hover:text-primary transition-all"
+            href="https://johan-bermeo.dev"
+          >
+            Portafolio
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Layout -->
+    <main
+      class="flex-grow w-full max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-10 flex gap-gutter"
+    >
+      <!-- Índice -->
+      <aside
+        class="hidden lg:flex flex-col w-72 shrink-0 sticky top-24 h-fit bg-surface-container-low border border-outline-variant rounded-lg overflow-hidden"
+      >
+        <div class="p-6 border-b border-outline-variant bg-surface">
+          <h3 class="font-headline-md text-headline-md text-primary">Índice</h3>
+
+          <p
+            class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed"
+          >
+            Imagen Personal y Profesional
+          </p>
+        </div>
+
+        <nav class="flex flex-col py-2">
+          <a
+            href="#tema1"
+            class="px-5 py-3 hover:bg-surface-container transition-all text-on-surface font-semibold border-l-4 border-primary bg-surface-container-high"
+          >
+            TEMA 1
+          </a>
+
+          <a
+            href="#intro-netiqueta"
+            class="px-8 py-2 text-on-surface-variant hover:text-primary transition-all text-body-sm"
+          >
+            Introducción
+          </a>
+
+          <a
+            href="#importancia"
+            class="px-8 py-2 text-on-surface-variant hover:text-primary transition-all text-body-sm"
+          >
+            ¿Por qué es importante?
+          </a>
+
+          <a
+            href="#principios"
+            class="px-8 py-2 text-on-surface-variant hover:text-primary transition-all text-body-sm"
+          >
+            Principios Fundamentales
+          </a>
+
+          <a
+            href="#recomendaciones-netiqueta"
+            class="px-8 py-2 text-on-surface-variant hover:text-primary transition-all text-body-sm"
+          >
+            Recomendaciones
+          </a>
+
+          <a
+            href="#tema2"
+            class="px-5 py-3 hover:bg-surface-container transition-all text-on-surface font-semibold mt-4"
+          >
+            TEMA 2
+          </a>
+
+          <a
+            href="#imagen-personal"
+            class="px-8 py-2 text-on-surface-variant hover:text-primary transition-all text-body-sm"
+          >
+            Imagen Personal
+          </a>
+
+          <a
+            href="#colorimetria"
+            class="px-8 py-2 text-on-surface-variant hover:text-primary transition-all text-body-sm"
+          >
+            Colorimetría
+          </a>
+
+          <a
+            href="#lenguaje-corporal"
+            class="px-8 py-2 text-on-surface-variant hover:text-primary transition-all text-body-sm"
+          >
+            Lenguaje Corporal
+          </a>
+
+          <a
+            href="#referencias"
+            class="px-5 py-3 hover:bg-surface-container transition-all text-on-surface font-semibold mt-4"
+          >
+            Referencias APA
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Artículo -->
+      <section
+        class="flex-grow max-w-4xl mx-auto bg-surface-container-lowest border border-outline-variant rounded-lg shadow-sm overflow-hidden"
+      >
+        <!-- Hero -->
+        <div class="relative h-[320px] md:h-[420px] overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop"
+            alt="Netiqueta e Imagen Personal"
+            class="w-full h-full object-cover"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"
+          ></div>
+
+          <div class="absolute bottom-0 left-0 p-8 md:p-12 text-white">
+            <p
+              class="uppercase tracking-[0.3em] text-sm opacity-80 mb-4 font-semibold"
+            >
+              Imagen Personal y Profesional
+            </p>
+
+            <h1
+              class="font-display-lg text-display-lg-mobile md:text-display-lg leading-tight max-w-4xl"
+            >
+              Netiqueta e Imagen Personal en el Siglo XXI
+            </h1>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <article class="p-6 md:p-12">
+          <!-- Metadata -->
+          <div
+            class="flex flex-wrap gap-6 border-b border-outline-variant pb-8 mb-10"
+          >
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold"
+              >
+                JB
+              </div>
+
+              <div>
+                <p class="font-label-md text-label-md text-on-surface">
+                  Johan Bermeo
+                </p>
+
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Blog Académico
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2 text-on-surface-variant">
+              <span class="material-symbols-outlined text-[20px]">
+                calendar_today
+              </span>
+
+              <span class="font-label-md text-label-md">
+                20 de Mayo, 2026
+              </span>
+            </div>
+
+            <div class="flex items-center gap-2 text-on-surface-variant">
+              <span class="material-symbols-outlined text-[20px]">
+                schedule
+              </span>
+
+              <span class="font-label-md text-label-md">
+                10 min de lectura
+              </span>
+            </div>
+          </div>
+
+          <!-- Introducción -->
+          <div
+            class="space-y-7 text-on-surface font-body-lg text-body-lg leading-relaxed"
+          >
+            <section id="tema1">
+              <span
+                class="text-secondary uppercase tracking-[0.2em] text-sm font-bold"
+              >
+                Tema 1
+              </span>
+
+              <h2
+                class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mt-3 mb-6"
+              >
+                Netiqueta — Las Reglas No Escritas del Mundo Digital
+              </h2>
+            </section>
+
+            <section id="intro-netiqueta">
+              <p
+                class="font-bold text-primary italic border-l-4 border-primary pl-6 py-3 bg-surface-container-low rounded-r"
+              >
+                La netiqueta representa el conjunto de normas y prácticas que
+                permiten una convivencia respetuosa dentro de internet y las
+                plataformas digitales.
+              </p>
+
+              <p>
+                La palabra "netiqueta" es una fusión de "network" (red) y
+                "etiqueta". Se trata de un conjunto de prácticas y normas de
+                comportamiento que debemos seguir cuando nos comunicamos a
+                través de medios digitales.
+              </p>
+
+              <p>
+                Aunque vivimos hiperconectados, muchos usuarios desconocen estas
+                normas o simplemente las ignoran, lo que genera conflictos,
+                malentendidos y daños a la reputación digital que pueden tener
+                consecuencias reales.
+              </p>
+
+              <p>
+                El concepto se popularizó en los años noventa, cuando las
+                comunidades digitales empezaron a definir reglas básicas para
+                garantizar el correcto comportamiento en internet.
+              </p>
+            </section>
+
+            <!-- Imagen -->
+            <div
+              class="my-10 bg-surface-container p-4 rounded border border-outline-variant"
+            >
+              <img
+                class="w-full h-[420px] object-cover rounded"
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop"
+                alt="Comunicación digital"
+              />
+
+              <p
+                class="text-body-sm font-body-sm text-on-surface-variant mt-3 text-center italic"
+              >
+                Figura 1. Comunicación digital y comportamiento en línea.
+              </p>
+            </div>
+
+            <section id="importancia">
+              <h3 class="font-headline-md text-headline-md text-primary">
+                ¿Por qué es importante la netiqueta?
+              </h3>
+
+              <p>
+                La finalidad de aplicar la netiqueta es promover el respeto en
+                las redes sociales y generar un entorno colaborativo.
+              </p>
+
+              <p>
+                Cumplir con las normas de comportamiento en línea permite
+                fomentar el respeto, evitar malentendidos, proteger la
+                privacidad y promover la colaboración.
+              </p>
+
+              <blockquote
+                class="bg-surface-container-low border-l-4 border-primary p-8 my-8 rounded-r"
+              >
+                <p class="font-headline-md text-primary italic leading-relaxed">
+                  “En el ámbito digital, la reputación puede derrumbarse con un
+                  solo clic.”
+                </p>
+              </blockquote>
+
+              <p>
+                Los errores online suelen agigantarse hasta lo inimaginable y
+                por tiempo indefinido, y una reputación digital negativa
+                limitará las oportunidades cerrando puertas sin siquiera
+                enterarse.
+              </p>
+            </section>
+
+            <section id="principios">
+              <h3 class="font-headline-md text-headline-md text-primary pt-6">
+                Principios fundamentales de la netiqueta
+              </h3>
+
+              <div class="grid gap-6 mt-8">
+                <div
+                  class="border border-outline-variant rounded-lg p-6 bg-surface-container-low"
+                >
+                  <h4 class="font-bold text-primary mb-3">
+                    1. Recuerda que del otro lado hay una persona
+                  </h4>
+
+                  <p>
+                    Cuando desarrollamos una conversación en línea es muy fácil
+                    malinterpretar lo que nos quieren decir, y también olvidar
+                    que nuestro interlocutor tiene sentimientos similares a los
+                    nuestros.
+                  </p>
+                </div>
+
+                <div
+                  class="border border-outline-variant rounded-lg p-6 bg-surface-container-low"
+                >
+                  <h4 class="font-bold text-primary mb-3">
+                    2. Adapta tu comportamiento al contexto
+                  </h4>
+
+                  <p>
+                    No es lo mismo LinkedIn que TikTok; tampoco se usa el mismo
+                    lenguaje en un grupo personal que en uno laboral
+                    profesional.
+                  </p>
+                </div>
+
+                <div
+                  class="border border-outline-variant rounded-lg p-6 bg-surface-container-low"
+                >
+                  <h4 class="font-bold text-primary mb-3">
+                    3. No escribas en mayúsculas sostenidas
+                  </h4>
+
+                  <p>
+                    En internet, escribir completamente en mayúsculas suele
+                    interpretarse como gritar.
+                  </p>
+                </div>
+
+                <div
+                  class="border border-outline-variant rounded-lg p-6 bg-surface-container-low"
+                >
+                  <h4 class="font-bold text-primary mb-3">
+                    4. Verifica antes de compartir
+                  </h4>
+
+                  <p>
+                    Usar las redes de forma responsable significa verificar la
+                    información antes de difundirla y evitar la desinformación.
+                  </p>
+                </div>
+
+                <div
+                  class="border border-outline-variant rounded-lg p-6 bg-surface-container-low"
+                >
+                  <h4 class="font-bold text-primary mb-3">
+                    5. Cita las fuentes
+                  </h4>
+
+                  <p>
+                    Reconocer a los autores originales fortalece la credibilidad
+                    y evita problemas legales.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section id="recomendaciones-netiqueta">
+              <h3 class="font-headline-md text-headline-md text-primary pt-6">
+                Recomendaciones para una netiqueta saludable
+              </h3>
+
+              <ul class="space-y-4 mt-6">
+                <li
+                  class="bg-surface-container-low border border-outline-variant rounded-lg p-5"
+                >
+                  • Piensa dos veces antes de publicar: internet deja huella
+                  permanente.
+                </li>
+
+                <li
+                  class="bg-surface-container-low border border-outline-variant rounded-lg p-5"
+                >
+                  • Usa emojis con criterio en contextos informales.
+                </li>
+
+                <li
+                  class="bg-surface-container-low border border-outline-variant rounded-lg p-5"
+                >
+                  • Responde con oportunidad y evita ignorar mensajes
+                  importantes.
+                </li>
+
+                <li
+                  class="bg-surface-container-low border border-outline-variant rounded-lg p-5"
+                >
+                  • Comparte críticas constructivas y respeta la opinión de los
+                  demás.
+                </li>
+              </ul>
+            </section>
+
+            <!-- Tema 2 -->
+            <section id="tema2" class="pt-16">
+              <span
+                class="text-secondary uppercase tracking-[0.2em] text-sm font-bold"
+              >
+                Tema 2
+              </span>
+
+              <h2
+                class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mt-3 mb-6"
+              >
+                Imagen Personal — Apariencia Física, Colores y Lenguaje Corporal
+              </h2>
+            </section>
+
+            <section id="imagen-personal">
+              <p>
+                La imagen personal es el punto de partida en los conceptos de
+                identidad y personal branding profesional.
+              </p>
+
+              <p>
+                La primera impresión puede generarse en apenas segundos, y eso
+                influye directamente en la vida social, profesional y personal.
+              </p>
+
+              <div
+                class="my-10 bg-surface-container p-4 rounded border border-outline-variant"
+              >
+                <img
+                  class="w-full h-[420px] object-cover rounded"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1400&auto=format&fit=crop"
+                  alt="Imagen profesional"
+                />
+
+                <p
+                  class="text-body-sm font-body-sm text-on-surface-variant mt-3 text-center italic"
+                >
+                  Figura 2. La imagen profesional influye en la percepción
+                  social.
+                </p>
+              </div>
+
+              <blockquote class="bg-primary text-white p-8 rounded-lg my-10">
+                <p class="font-headline-md italic leading-relaxed">
+                  “La autenticidad siempre supera a la perfección forzada.”
+                </p>
+              </blockquote>
+
+              <p>
+                Una imagen personal bien cuidada aumenta significativamente la
+                confianza y mejora las relaciones interpersonales.
+              </p>
+            </section>
+
+            <section id="colorimetria">
+              <h3 class="font-headline-md text-headline-md text-primary pt-6">
+                2.2 Colorimetría: los colores que te favorecen
+              </h3>
+
+              <p>
+                La colorimetría estudia los colores y su impacto visual,
+                psicológico y emocional en las personas.
+              </p>
+
+              <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <div
+                  class="bg-surface-container-low border border-outline-variant p-6 rounded-lg text-center"
+                >
+                  <div
+                    class="w-20 h-20 rounded-full bg-orange-700 mx-auto mb-5"
+                  ></div>
+
+                  <h4 class="font-bold text-primary mb-3">Piel cálida</h4>
+
+                  <p class="text-body-sm">
+                    Favorecen tonos tierra, terracota, naranja y verde oliva.
+                  </p>
+                </div>
+
+                <div
+                  class="bg-surface-container-low border border-outline-variant p-6 rounded-lg text-center"
+                >
+                  <div
+                    class="w-20 h-20 rounded-full bg-blue-700 mx-auto mb-5"
+                  ></div>
+
+                  <h4 class="font-bold text-primary mb-3">Piel fría</h4>
+
+                  <p class="text-body-sm">
+                    Favorecen tonos azules, fucsia y verde esmeralda.
+                  </p>
+                </div>
+
+                <div
+                  class="bg-surface-container-low border border-outline-variant p-6 rounded-lg text-center"
+                >
+                  <div
+                    class="w-20 h-20 rounded-full bg-gray-500 mx-auto mb-5"
+                  ></div>
+
+                  <h4 class="font-bold text-primary mb-3">Piel neutra</h4>
+
+                  <p class="text-body-sm">
+                    Se adaptan bien tonos equilibrados y suaves.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section id="lenguaje-corporal">
+              <h3 class="font-headline-md text-headline-md text-primary pt-6">
+                2.3 Gestos y posturas: tu cuerpo también habla
+              </h3>
+
+              <p>
+                Una persona puede dejar de hablar pero no dejar de comunicarse
+                con su cuerpo.
+              </p>
+
+              <p>
+                La postura, la mirada, la sonrisa y el movimiento de las manos
+                transmiten seguridad, apertura y credibilidad.
+              </p>
+
+              <blockquote
+                class="bg-surface-container-low border-l-4 border-primary p-8 my-8 rounded-r"
+              >
+                <p class="font-headline-md text-primary italic">
+                  “Nuestro cerebro confía más en los gestos que en las
+                  palabras.”
+                </p>
+              </blockquote>
+
+              <ul class="space-y-4">
+                <li>• Mantén una espalda recta y hombros relajados.</li>
+
+                <li>• Usa las palmas abiertas para transmitir sinceridad.</li>
+
+                <li>• Practica frente al espejo para mejorar tus posturas.</li>
+
+                <li>• Mantén coherencia entre lenguaje verbal y corporal.</li>
+              </ul>
+            </section>
+
+            <!-- Referencias -->
+            <footer
+              id="referencias"
+              class="mt-20 pt-10 border-t border-outline-variant"
+            >
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-8"
+              >
+                Referencias Bibliográficas — Normas APA
+              </h3>
+
+              <ul class="space-y-6">
+                <li class="bg-surface-container-low p-5 rounded-lg">
+                  Gobierno de Canarias. (s.f.).
+                  <i>Netiqueta de las redes sociales.</i>
+                  <a
+                    href="https://www3.gobiernodecanarias.org/medusa/contenidosdigitales/FormacionTIC/cdtic2014/04cd/33_netiqueta_de_las_redes_sociales.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary underline md:no-underline md:hover:underline visited:text-primary transition-all break-all"
+                  >
+                    https://www3.gobiernodecanarias.org/medusa/contenidosdigitales/FormacionTIC/cdtic2014/04cd/33_netiqueta_de_las_redes_sociales.html
+                  </a>
+                </li>
+
+                <li class="bg-surface-container-low p-5 rounded-lg">
+                  Repsol. (11 de febrero de 2025).
+                  <i
+                    >Qué es la netiqueta: 10 reglas para el comportamiento en
+                    línea.</i
+                  >
+                  <a
+                    href="https://www.repsol.com/es/como-en-casa/que-es-una-netiqueta/index.cshtml"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary underline md:no-underline md:hover:underline visited:text-primary transition-all break-all"
+                  >
+                    https://www.repsol.com/es/como-en-casa/que-es-una-netiqueta/index.cshtml
+                  </a>
+                </li>
+
+                <li class="bg-surface-container-low p-5 rounded-lg">
+                  De la Cruz, S. (19 de octubre de 2023).
+                  <i
+                    >La importancia de las netiquetas cuando navegas en la
+                    red.</i
+                  >
+                  Telefónica.
+                  <a
+                    href="https://www.telefonica.com/es/sala-comunicacion/blog/importancia-netiquetas-cuando-navegas-red/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary underline md:no-underline md:hover:underline visited:text-primary transition-all break-all"
+                  >
+                    https://www.telefonica.com/es/sala-comunicacion/blog/importancia-netiquetas-cuando-navegas-red/
+                  </a>
+                </li>
+
+                <li class="bg-surface-container-low p-5 rounded-lg">
+                  Chio Lecca Fashion School. (8 de enero de 2025).
+                  <i>Colorimetría de la piel: ¿en qué consiste?</i>
+                  <a
+                    href="https://www.chio-lecca.edu.pe/blogs/articulos/colorimetria-de-la-piel"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary underline md:no-underline md:hover:underline visited:text-primary transition-all break-all"
+                  >
+                    https://www.chio-lecca.edu.pe/blogs/articulos/colorimetria-de-la-piel
+                  </a>
+                </li>
+
+                <li class="bg-surface-container-low p-5 rounded-lg">
+                  Michelle Bilodeau. (9 de julio de 2025).
+                  <i
+                    >El poder del lenguaje corporal en tu imagen profesional.</i
+                  >
+                  <a
+                    href="https://michellebilodeau.com/el-poder-del-lenguaje-corporal/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary underline md:no-underline md:hover:underline visited:text-primary transition-all break-all"
+                  >
+                    https://michellebilodeau.com/el-poder-del-lenguaje-corporal/
+                  </a>
+                </li>
+              </ul>
+            </footer>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-dim border-t border-outline-variant mt-12">
+      <div
+        class="w-full py-8 px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center max-w-container-max-width mx-auto gap-6"
+      >
+        <div>
+          <span class="font-label-md text-label-md font-bold text-on-surface">
+            Johan's Blog
+          </span>
+
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Blog académico sobre imagen personal y comunicación digital.
+          </p>
+        </div>
+
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          © 2026 Johan Bermeo. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
